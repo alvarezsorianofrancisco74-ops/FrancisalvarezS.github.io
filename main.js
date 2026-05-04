@@ -50,3 +50,10 @@ function enviarMensaje() {
   document.getElementById('contactFormEl').style.display = 'none';
   document.getElementById('formOk').style.display = 'block';
 }
+function comprar(pelicula) {
+  // Guardar la película seleccionada
+  localStorage.setItem("peliculaSeleccionada", pelicula);
+
+  // Redirigir a la página de compra
+  window.location.href = "compra.html";
+}
