@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CineNova – Contacto</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Sobre Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="label">Estamos aquí para ti</span>
+    <h1>Contáctanos</h1>
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Contacto</p>
+  </div>
+</section>
+
+<!-- CONTACTO PRINCIPAL -->
+<section class="contacto-section">
+  <div class="contacto-grid">
+
+    <!-- INFO -->
+    <div class="contacto-info reveal">
+      <span class="label">Información de Contacto</span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.8rem);font-weight:600;color:var(--cream);margin-bottom:16px;line-height:1.1">Hablemos sobre tu <em style="color:var(--gold-lt);font-style:italic">próxima visita</em></h2>
+      <div class="divider-gold"></div>
+      <p>¿Tienes preguntas sobre nuestra cartelera, quieres reservar una sala privada o simplemente deseas más información? Nuestro equipo está disponible para ayudarte.</p>
+
+      <div class="info-block">
+        <div class="ib-icon">📍</div>
+        <div class="ib-text">
+          <strong>Dirección</strong>
+          <span>Av. Winston Churchill #45, Piantini<br/>Santo Domingo, República Dominicana</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="ib-icon">📞</div>
+        <div class="ib-text">
+          <strong>Teléfono</strong>
+          <span>(809) 555-2024<br/>(809) 555-2025 — Eventos</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="ib-icon">✉️</div>
+        <div class="ib-text">
+          <strong>Correo Electrónico</strong>
+          <span>info@cinenova.do<br/>eventos@cinenova.do</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="ib-icon">🕐</div>
+        <div class="ib-text">
+          <strong>Horario de Taquilla</strong>
+          <span>Lun–Jue: 9:30 AM – 10:30 PM<br/>Vie–Dom: 8:30 AM – 12:30 AM</span>
+        </div>
+      </div>
+
+      <!-- MAPA -->
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6!2d-69.9312!3d18.4861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI5JzEwLjAiTiA2OcKwNTUnNTIuMyJX!5e0!3m2!1ses!2sdo!4v1234567890"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="contacto-form-box reveal">
+      <h3>Envíanos un Mensaje</h3>
+      <p class="sub-text">Responderemos en menos de 24 horas en días laborables.</p>
+
+      <div id="contactFormEl">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre *</label>
+            <input type="text" id="cnombre" placeholder="Tu nombre completo"/>
+          </div>
+          <div class="form-group">
+            <label>Apellido</label>
+            <input type="text" id="capellido" placeholder="Tu apellido"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Correo Electrónico *</label>
+            <input type="email" id="cemail" placeholder="correo@ejemplo.com"/>
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="tel" id="ctelefono" placeholder="(809) 000-0000"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Motivo de Contacto</label>
+          <select id="cmotivo">
+            <option value="">Selecciona una opción...</option>
+            <option>Información general</option>
+            <option>Reserva de sala privada</option>
+            <option>CinePass / Membresías</option>
+            <option>Evento corporativo</option>
+            <option>Cumpleaños y celebraciones</option>
+            <option>Sugerencias y quejas</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensaje *</label>
+          <textarea id="cmensaje" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+        </div>
+        <button class="btn-send" onclick="enviarMensaje()">Enviar Mensaje →</button>
+      </div>
+
+      <div class="form-success-msg" id="formOk">
+        <div class="check">✅</div>
+        <h4>¡Mensaje Enviado!</h4>
+        <p>Gracias por contactarnos. Un miembro de nuestro equipo<br/>se comunicará contigo muy pronto.</p>
+        <div style="margin-top:24px">
+          <a href="index.html" class="btn-primary">Volver al Inicio</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:80px 0;background:var(--navy-mid)">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="label">Preguntas Frecuentes</span>
+      <h2>¿Tienes <em>dudas?</em></h2>
+      <div class="divider-gold centered"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:900px;margin:0 auto" class="reveal">
+      <div class="horario-card" style="text-align:left;padding:28px 24px">
+        <h4 style="margin-bottom:10px">¿Puedo comprar entradas en línea?</h4>
+        <p>Actualmente las entradas se adquieren en taquilla o llamando por teléfono. Próximamente habilitaremos la compra en línea.</p>
+      </div>
+      <div class="horario-card" style="text-align:left;padding:28px 24px">
+        <h4 style="margin-bottom:10px">¿Aceptan tarjetas de crédito?</h4>
+        <p>Sí, aceptamos Visa, Mastercard y American Express, además de efectivo y transferencias bancarias.</p>
+      </div>
+      <div class="horario-card" style="text-align:left;padding:28px 24px">
+        <h4 style="margin-bottom:10px">¿Cuál es la política de menores?</h4>
+        <p>Los menores de 13 años deben estar acompañados por un adulto. Las películas clasificadas +18 requieren identificación.</p>
+      </div>
+      <div class="horario-card" style="text-align:left;padding:28px 24px">
+        <h4 style="margin-bottom:10px">¿Se permiten alimentos externos?</h4>
+        <p>Solo se permiten alimentos adquiridos en nuestras concesiones dentro de las salas de cine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+      <p>Donde cada película se convierte en un recuerdo eterno.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="soc-btn fb">f</a>
+        <a href="https://instagram.com" target="_blank" class="soc-btn ig">◈</a>
+        <a href="https://tiktok.com" target="_blank" class="soc-btn tt">♪</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Av. Winston Churchill #45</li>
+        <li>Santo Domingo, RD</li>
+        <li>📞 (809) 555-2024</li>
+        <li>✉ info@cinenova.do</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 CineNova · Todos los derechos reservados</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

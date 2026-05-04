@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CineNova – Servicios</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Sobre Nosotros</a></li>
+      <li><a href="servicios.html" class="active">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="label">Lo que ofrecemos</span>
+    <h1>Nuestros <em>Servicios</em></h1>
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Servicios</p>
+  </div>
+</section>
+
+<!-- SERVICIOS PRINCIPALES -->
+<section class="servicios-section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="label">Elige tu experiencia</span>
+      <h2>Salas y <em>Experiencias</em></h2>
+      <div class="divider-gold centered"></div>
+    </div>
+    <div class="servicios-main-grid">
+
+      <div class="servicio-card reveal" style="animation-delay:.1s">
+        <span class="serv-icon">🎬</span>
+        <h3>Sala Estándar</h3>
+        <p>Pantalla de 15 metros con sistema de sonido estéreo 7.1 de alta definición. Asientos ergonómicos y perfecta visibilidad desde cualquier posición. Ideal para toda la familia.</p>
+        <span class="serv-price">Desde RD$250</span>
+      </div>
+
+      <div class="servicio-card serv-featured reveal" style="animation-delay:.2s">
+        <div class="featured-badge">⭐ Popular</div>
+        <span class="serv-icon">🔊</span>
+        <h3>Dolby Atmos</h3>
+        <p>La experiencia de sonido más avanzada del mundo. El audio fluye en tres dimensiones creando una atmósfera sonora completamente inmersiva que te coloca dentro de la película.</p>
+        <span class="serv-price">Desde RD$450</span>
+      </div>
+
+      <div class="servicio-card reveal" style="animation-delay:.3s">
+        <span class="serv-icon">👑</span>
+        <h3>VIP Premium</h3>
+        <p>Butacas reclinables de cuero legítimo, mesita personal, servicio de alimentos en sala, iluminación ambiental ajustable y acceso al lounge exclusivo antes y después de la función.</p>
+        <span class="serv-price">Desde RD$800</span>
+      </div>
+
+      <div class="servicio-card reveal" style="animation-delay:.1s">
+        <span class="serv-icon">🍿</span>
+        <h3>Concesiones Premium</h3>
+        <p>Palomitas artesanales en 12 sabores, nachos con queso fundido, hot dogs gourmet, wraps, postres y una completa carta de bebidas frías y calientes. ¡Combos especiales disponibles!</p>
+        <span class="serv-price">Variedad total</span>
+      </div>
+
+      <div class="servicio-card reveal" style="animation-delay:.2s">
+        <span class="serv-icon">🎂</span>
+        <h3>Sala Privada</h3>
+        <p>Reserva una sala completa para cumpleaños, aniversarios, reuniones corporativas o cualquier celebración especial. Incluye decoración temática y servicio de catering personalizado.</p>
+        <span class="serv-price">Cotizar evento</span>
+      </div>
+
+      <div class="servicio-card reveal" style="animation-delay:.3s">
+        <span class="serv-icon">🎟️</span>
+        <h3>CinePass Mensual</h3>
+        <p>Acceso ilimitado a todas las películas del mes, 20% de descuento en concesiones, preventas exclusivas y acceso prioritario a los estrenos más esperados. Sin compromisos anuales.</p>
+        <span class="serv-price">RD$1,200/mes</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HORARIOS -->
+<section class="horarios-section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="label">Planifica tu visita</span>
+      <h2>Horarios de <em>Atención</em></h2>
+      <div class="divider-gold centered"></div>
+    </div>
+    <div class="horarios-grid">
+      <div class="horario-card reveal">
+        <h4>Lunes – Jueves</h4>
+        <p>Primeras funciones: 10:00 AM<br/>Últimas funciones: 10:00 PM<br/>Taquilla abre: 9:30 AM</p>
+      </div>
+      <div class="horario-card reveal">
+        <h4>Viernes</h4>
+        <p>Primeras funciones: 10:00 AM<br/>Últimas funciones: 11:30 PM<br/>Taquilla abre: 9:30 AM</p>
+      </div>
+      <div class="horario-card reveal">
+        <h4>Sábado</h4>
+        <p>Primeras funciones: 9:00 AM<br/>Últimas funciones: 12:00 AM<br/>Taquilla abre: 8:30 AM</p>
+      </div>
+      <div class="horario-card reveal">
+        <h4>Domingo</h4>
+        <p>Primeras funciones: 9:00 AM<br/>Últimas funciones: 11:00 PM<br/>Taquilla abre: 8:30 AM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>¿Listo para vivir la<br><em>experiencia CineNova?</em></h2>
+        <p>Compra tus entradas en taquilla o contáctanos para reservas especiales.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contacto.html" class="btn-primary">Reservar Ahora</a>
+        <a href="galeria.html" class="btn-ghost">Ver Galería</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+      <p>Donde cada película se convierte en un recuerdo eterno.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="soc-btn fb">f</a>
+        <a href="https://instagram.com" target="_blank" class="soc-btn ig">◈</a>
+        <a href="https://tiktok.com" target="_blank" class="soc-btn tt">♪</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Av. Winston Churchill #45</li>
+        <li>Santo Domingo, RD</li>
+        <li>📞 (809) 555-2024</li>
+        <li>✉ info@cinenova.do</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 CineNova · Todos los derechos reservados</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

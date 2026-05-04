@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CineNova – Inicio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="sobre.html">Sobre Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content animate-in">
+    <p class="eyebrow">✦ &nbsp;Bienvenido a la experiencia&nbsp; ✦</p>
+    <h1 class="hero-title">LA MAGIA DEL<br><span>CINE VIVE</span><br>AQUÍ</h1>
+    <p class="hero-desc">Ocho salas de última generación, sonido Dolby Atmos, proyección láser 4K y una atmósfera diseñada para que cada película sea inolvidable.</p>
+    <div class="hero-actions">
+      <a href="servicios.html" class="btn-primary">Ver Cartelera</a>
+      <a href="sobre.html" class="btn-ghost">Conócenos</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Explora</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- CARTELERA PREVIEW -->
+<section class="cartelera-preview">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="label">En cartelera ahora</span>
+      <h2>Estrenos <em>de la semana</em></h2>
+    </div>
+    <div class="peliculas-grid">
+      <div class="pelicula-card" style="animation-delay:.1s">
+        <div class="pelicula-img" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&q=80')">
+          <span class="rating">⭐ 8.4</span>
+          <div class="pelicula-overlay"><button class="btn-tickets">Comprar</button></div>
+        </div>
+        <div class="pelicula-info">
+          <span class="genero">Acción · 2h 22m</span>
+          <h3>El Último Horizonte</h3>
+          <p>Desde RD$<strong>350</strong></p>
+        </div>
+      </div>
+      <div class="pelicula-card" style="animation-delay:.2s">
+        <div class="pelicula-img" style="background-image:url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&q=80')">
+          <span class="rating">⭐ 9.1</span>
+          <div class="pelicula-overlay"><button class="btn-tickets">Comprar</button></div>
+        </div>
+        <div class="pelicula-info">
+          <span class="genero">Drama · 1h 58m</span>
+          <h3>Sombras del Pasado</h3>
+          <p>Desde RD$<strong>350</strong></p>
+        </div>
+      </div>
+      <div class="pelicula-card" style="animation-delay:.3s">
+        <div class="pelicula-img" style="background-image:url('https://images.unsplash.com/photo-1535016120720-40c646be5580?w=400&q=80')">
+          <span class="rating">⭐ 7.8</span>
+          <div class="pelicula-overlay"><button class="btn-tickets">Comprar</button></div>
+        </div>
+        <div class="pelicula-info">
+          <span class="genero">Ciencia Ficción · 2h 10m</span>
+          <h3>Más Allá del Cosmos</h3>
+          <p>Desde RD$<strong>350</strong></p>
+        </div>
+      </div>
+      <div class="pelicula-card" style="animation-delay:.4s">
+        <div class="pelicula-img" style="background-image:url('https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&q=80')">
+          <span class="rating">⭐ 8.7</span>
+          <div class="pelicula-overlay"><button class="btn-tickets">Comprar</button></div>
+        </div>
+        <div class="pelicula-info">
+          <span class="genero">Terror · 1h 45m</span>
+          <h3>La Casa Olvidada</h3>
+          <p>Desde RD$<strong>350</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="centered" style="margin-top:48px">
+      <a href="servicios.html" class="btn-primary">Ver Cartelera Completa →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA STRIP -->
+<section class="exp-strip">
+  <div class="exp-item"><span class="exp-num">8</span><span class="exp-label">Salas</span></div>
+  <div class="exp-div"></div>
+  <div class="exp-item"><span class="exp-num">4K</span><span class="exp-label">Proyección Láser</span></div>
+  <div class="exp-div"></div>
+  <div class="exp-item"><span class="exp-num">Dolby</span><span class="exp-label">Atmos Sound</span></div>
+  <div class="exp-div"></div>
+  <div class="exp-item"><span class="exp-num">500K+</span><span class="exp-label">Visitantes</span></div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>¿Listo para tu próxima<br><em>experiencia cinematográfica?</em></h2>
+        <p>Reserva tu sala, únete a nuestro CinePass o planifica un evento privado.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contacto.html" class="btn-primary">Contáctanos</a>
+        <a href="galeria.html" class="btn-ghost">Ver Galería</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+      <p>Donde cada película se convierte en un recuerdo eterno.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="soc-btn fb">f</a>
+        <a href="https://instagram.com" target="_blank" class="soc-btn ig">◈</a>
+        <a href="https://tiktok.com" target="_blank" class="soc-btn tt">♪</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Av. Winston Churchill #45</li>
+        <li>Santo Domingo, RD</li>
+        <li>📞 (809) 555-2024</li>
+        <li>✉ info@cinenova.do</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 CineNova · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

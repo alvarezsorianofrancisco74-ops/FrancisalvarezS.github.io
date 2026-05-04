@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CineNova – Galería</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre.html">Sobre Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="galeria.html" class="active">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="label">Nuestras instalaciones</span>
+    <h1>Galería <em>Visual</em></h1>
+    <p class="breadcrumb"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Galería</p>
+  </div>
+</section>
+
+<!-- GALERÍA MASONRY -->
+<section class="galeria-section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="label">Explora CineNova</span>
+      <h2>Un vistazo a nuestro <em>mundo</em></h2>
+      <div class="divider-gold centered"></div>
+    </div>
+    <div class="galeria-masonry">
+      <div class="gal-item tall reveal">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=700&q=80" alt="Sala Principal"/>
+        <div class="gal-overlay"><span>Sala Principal</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1586899028174-e7098604235b?w=600&q=80" alt="Pantalla 4K"/>
+        <div class="gal-overlay"><span>Pantalla 4K</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&q=80" alt="Atmósfera"/>
+        <div class="gal-overlay"><span>La Atmósfera</span></div>
+      </div>
+      <div class="gal-item wide reveal">
+        <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=900&q=80" alt="Lobby"/>
+        <div class="gal-overlay"><span>Lobby Principal</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&q=80" alt="Sala VIP"/>
+        <div class="gal-overlay"><span>Sala VIP</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1569317002804-ab77bcf1bce4?w=600&q=80" alt="Concesiones"/>
+        <div class="gal-overlay"><span>Concesiones</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=600&q=80" alt="Interior"/>
+        <div class="gal-overlay"><span>Interior Sala</span></div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?w=600&q=80" alt="Estrenos"/>
+        <div class="gal-overlay"><span>Cartelera</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Experiencia audiovisual</span>
+      <h2>Conoce CineNova <em>en video</em></h2>
+      <div class="divider-gold"></div>
+    </div>
+    <div class="video-embed-wrap reveal">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="CineNova – Experiencia" allowfullscreen></iframe>
+    </div>
+    <p style="margin-top:20px;font-size:.82rem;color:var(--cream-faint)">🎞 Recorre nuestras instalaciones y descubre lo que hace único a CineNova.</p>
+  </div>
+</section>
+
+<!-- REDES SOCIALES -->
+<section class="redes-section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="label">Síguenos</span>
+      <h2>Estamos en todas las <em>redes</em></h2>
+      <div class="divider-gold centered"></div>
+      <p style="color:var(--cream-dim);max-width:500px;margin:0 auto;font-size:.9rem">Únete a nuestra comunidad digital y sé el primero en enterarte de estrenos, promociones y eventos especiales.</p>
+    </div>
+    <div class="redes-grid">
+      <a href="https://facebook.com" target="_blank" class="red-card fb reveal">
+        <div class="red-icon" style="color:#1877f2;font-size:2.2rem">📘</div>
+        <div class="red-info">
+          <h4>Facebook</h4>
+          <p>@CineNovaDO · 28K seguidores<br/>Eventos, sorteos y cartelera semanal</p>
+        </div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="red-card ig reveal">
+        <div class="red-icon" style="font-size:2.2rem">📸</div>
+        <div class="red-info">
+          <h4>Instagram</h4>
+          <p>@cinenova.do · 41K seguidores<br/>Fotos, reels y behind the scenes</p>
+        </div>
+      </a>
+      <a href="https://tiktok.com" target="_blank" class="red-card tt reveal">
+        <div class="red-icon" style="font-size:2.2rem">🎵</div>
+        <div class="red-info">
+          <h4>TikTok</h4>
+          <p>@cinenova · 15K seguidores<br/>Videos cortos y tendencias del cine</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>¿Te gustó lo que viste?<br><em>Ven a vivirlo en persona.</em></h2>
+        <p>Reserva tus entradas o contáctanos para cualquier consulta.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contacto.html" class="btn-primary">Contáctanos</a>
+        <a href="servicios.html" class="btn-ghost">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">CINE<span>NOVA</span></a>
+      <p>Donde cada película se convierte en un recuerdo eterno.</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank" class="soc-btn fb">f</a>
+        <a href="https://instagram.com" target="_blank" class="soc-btn ig">◈</a>
+        <a href="https://tiktok.com" target="_blank" class="soc-btn tt">♪</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <h4>Páginas</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Contacto</h4>
+      <ul>
+        <li>📍 Av. Winston Churchill #45</li>
+        <li>Santo Domingo, RD</li>
+        <li>📞 (809) 555-2024</li>
+        <li>✉ info@cinenova.do</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 CineNova · Todos los derechos reservados</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
